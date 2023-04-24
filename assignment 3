@@ -1,0 +1,111 @@
+# question 1 
+b = 'Python is a case sensitive language'
+
+length=len(b)
+
+print("length of the inpur string", length)
+
+
+reversestr=b[::-1]
+
+
+print("reversed string:", reversestr)
+
+
+newstr=b[11:27]
+
+print("new sliced string:", b)
+
+
+replacestr=b.replace("a case sensitive", "object oriented")
+
+print("replaced string", replacestr)
+
+
+# question 2 
+SID = int(input("Enter your SID:"))
+Name = str(input("Enter your name here:"))
+Department_Name = str(input("Enter your department name here:"))
+CGPA = float(input("Enter your CGPA here:"))
+
+if str(SID).startswith("2110"):
+    SID = str(SID)[:8]
+else:
+    print("Invalid SID")
+
+try:
+    CGPA = float(CGPA)
+    if 0 <= CGPA <= 10:
+        CGPA = round(CGPA, 2)
+    else:
+        print("Invalid CGPA")
+except ValueError:
+    print("Invalid CGPA")
+
+print("Hey,", Name, "Here!")
+print("My SID is", SID)
+print("I am from", Department_Name, "department and my CGPA is", CGPA)
+
+# question 3
+a=56
+b=10
+
+print(a&b)
+
+print(a|b)
+
+
+# question 4
+A = float(input("Enter the first number: "))
+B = float(input("Enter the second number: "))
+C = float(input("Enter the third number: "))
+
+print("First number:", A)
+print("Second number:", B)
+print("Third number:", C)
+
+if A > B and A > C:
+    greatest = A
+elif B > A and B > C:
+    greatest = B
+elif C > A and C > B:
+    greatest = C
+elif A == B == C:
+    greatest = A
+elif A == B and A > C:
+    greatest = A
+elif A == C and A > B:
+    greatest = A
+elif B == C and B > A:
+    greatest = B
+else:
+    print("Code Blast!!")
+
+print("The greatest of the three numbers is:", greatest)
+
+# quesyion 5
+string = input("Enter a string: ")
+
+if "name" in string:
+    print("Yes")
+else:
+    print("No")
+
+
+
+print(a^b)
+
+# question 6
+# Take input of three sides of a triangle
+a = int(input("Enter first side: "))
+b = int(input("Enter second side: "))
+c = int(input("Enter third side: "))
+
+# Check if the given lengths can form a triangle
+if a + b > c and a + c > b and b + c > a:
+    print("Yes, these lengths can form a triangle.")
+else:
+    print("No, these lengths cannot form a triangle.")
+
+
+
