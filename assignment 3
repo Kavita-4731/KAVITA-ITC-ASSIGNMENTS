@@ -106,8 +106,6 @@ else:
 
 
 
-print(a^b)
-
 # question 6
 # Take input of three sides of a triangle
 a = int(input("Enter first side: "))
