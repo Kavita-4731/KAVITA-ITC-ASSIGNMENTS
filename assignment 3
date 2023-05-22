@@ -21,6 +21,13 @@ replacestr=b.replace("a case sensitive", "object oriented")
 
 print("replaced string", replacestr)
 
+idx=b.index("a")
+white_spaces=b.strip()
+
+print(b)
+print(idx)
+print(white_spaces)
+
 
 # question 2 
 SID = int(input("Enter your SID:"))
